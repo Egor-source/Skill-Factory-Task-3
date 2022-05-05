@@ -1,0 +1,13 @@
+.header{
+  background-color: $secondary-background-color;
+  padding: 20px;
+  .header-nav{
+    justify-content: flex-end;
+    .dropdown-toggle{
+      padding: 0;
+    }
+  }
+  .user-avatar{
+    border-radius: 50%;
+  }
+}

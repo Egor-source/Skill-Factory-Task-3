@@ -1,0 +1,18 @@
+textarea{
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  outline: none;
+  width: 100%;
+  overflow: hidden;
+  height: var(--height);
+  &::placeholder{
+    font-size: $main-font-size;
+    line-height: $main-line-height;
+  }
+}
+
+.visibility-hidden{
+  visibility: hidden;
+}

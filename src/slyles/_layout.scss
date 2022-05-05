@@ -1,0 +1,22 @@
+@import "./components/header";
+@import "./components/footer";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: $primary-background-color;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  padding: 30px 20px;
+}

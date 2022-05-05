@@ -1,0 +1,18 @@
+//Vendors
+@import "~normalize.css/normalize.css";
+@import "~bootstrap/scss/bootstrap";
+
+@import "variables";
+@import "spacing";
+@import "font";
+@import "text";
+@import "layout";
+@import "bems";
+
+//Components
+@import "components/board-status";
+@import "components/board-task";
+@import "components/dropdown";
+
+//Pages
+@import "pages/task-detail";

@@ -1,0 +1,61 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+
+  &__toggle {
+    padding-right: 20px;
+    position: relative;
+    cursor: pointer;
+
+    &:after {
+      content: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.415 0.209991L6 4.79499L10.585 0.209991L12 1.62499L6 7.62499L0 1.62499L1.415 0.209991Z' fill='white'/%3E%3C/svg%3E%0A");
+      position: absolute;
+      line-height: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(calc(100% + 15px));
+    background: #FFFFFF;
+    border-radius: 5px;
+    &__item {
+      white-space: nowrap;
+      cursor: pointer;
+      min-width: 130px;
+      text-align: start;
+      padding: 10px;
+      border-radius: 5px;
+      &:hover{
+        background-color: #EBECF0;
+      }
+    }
+    &:after{
+      content: '';
+      border: 12px solid transparent;
+      border-bottom: 12px solid #fff;
+      position: absolute;
+      right: 28px;
+      top: 0;
+      transform: translateY(-100%);
+    }
+  }
+
+  &.active {
+    .dropdown__toggle {
+      &:after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
+    .dropdown__menu {
+      display: block;
+    }
+  }
+}

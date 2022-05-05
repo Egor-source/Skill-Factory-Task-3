@@ -1,0 +1,11 @@
+.task-wrapper{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  color:$main-color !important;
+  text-decoration: none;
+  transition: .3s;
+  &:hover{
+    background-color: #DEDEDE;
+  }
+}
