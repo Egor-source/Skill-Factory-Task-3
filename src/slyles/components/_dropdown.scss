@@ -30,8 +30,13 @@
       cursor: pointer;
       min-width: 130px;
       text-align: start;
-      padding: 10px;
       border-radius: 5px;
+      a{
+        text-decoration: none;
+        color: #000 !important;
+        padding: 10px;
+        display: block;
+      }
       &:hover{
         background-color: #EBECF0;
       }

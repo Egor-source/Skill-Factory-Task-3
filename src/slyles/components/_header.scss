@@ -1,13 +1,21 @@
-.header{
+.header {
   background-color: $secondary-background-color;
   padding: 20px;
-  .header-nav{
+
+  .header-nav {
     justify-content: flex-end;
-    .dropdown-toggle{
+
+    .dropdown-toggle {
       padding: 0;
     }
   }
-  .user-avatar{
+
+  .user-avatar {
     border-radius: 50%;
+  }
+
+  .h1 {
+    text-decoration: none;
+    color: #fff !important;
   }
 }
